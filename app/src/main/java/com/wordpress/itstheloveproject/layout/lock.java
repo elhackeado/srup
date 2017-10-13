@@ -69,7 +69,9 @@ public class lock extends AppCompatActivity {
 
     public void unlockher(View view) {
         databaseQuestion = FirebaseDatabase.getInstance().getReference("question/aman");
-        databaseQuestion.addValueEventListener(new ValueEventListener() {
+        databaseQuestion.addListenerForSingleValueEvent(new ValueEventListener() {
+
+
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
