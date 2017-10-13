@@ -62,6 +62,7 @@ public class lock extends AppCompatActivity {
 
             databaseQuestion.child("question").setValue(question);
             databaseQuestion.child("answer1").setValue(answer);
+            databaseQuestion.child("answer2").setValue("");
             Toast.makeText(this, "LOCKED SUCCESSFULLY", Toast.LENGTH_LONG).show();
         }
     }
