@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.wordpress.itstheloveproject.layout.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="What is your favorite city?"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="Answer"
+        android:inputType="textCapWords"
+        android:padding="5dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/unlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:onClick="unlock"
+        android:text="Unlock"
+        android:textColor="@color/colorAccent" />
+
+
+
+</RelativeLayout>

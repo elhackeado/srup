@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "125876581191",
+    "firebase_url": "https://test-c7e13.firebaseio.com",
+    "project_id": "test-c7e13",
+    "storage_bucket": "test-c7e13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125876581191:android:d6a88391c389309a",
+        "android_client_info": {
+          "package_name": "com.wordpress.itstheloveproject.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125876581191-of0cgubn1snmuk97kg3r6egbojs1b4cb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wordpress.itstheloveproject.test",
+            "certificate_hash": "ea712a0727d526b75599d595381f04a263dc00ae"
+          }
+        },
+        {
+          "client_id": "125876581191-7intkjmnu2r45mjijdg78m4gob8cup6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFMdCc4pDU3R2RkXOP5cvAfRZk_O5W3M0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125876581191-7intkjmnu2r45mjijdg78m4gob8cup6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125876581191:android:0334ee58af901746",
+        "android_client_info": {
+          "package_name": "com.wordpress.itstheloveproject.layout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125876581191-1t1rq7iogsola41ooe4ttpcpcobs8nsi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wordpress.itstheloveproject.layout",
+            "certificate_hash": "ea712a0727d526b75599d595381f04a263dc00ae"
+          }
+        },
+        {
+          "client_id": "125876581191-7intkjmnu2r45mjijdg78m4gob8cup6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFMdCc4pDU3R2RkXOP5cvAfRZk_O5W3M0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125876581191-7intkjmnu2r45mjijdg78m4gob8cup6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
