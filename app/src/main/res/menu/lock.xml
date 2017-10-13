@@ -1,5 +1,10 @@
-<menu xmlns:android="http://schemas.android.com/apk/res-auto" >
-    <item
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Location Found -->
+    <item android:id="@+id/lock"
         android:icon="@drawable/gitc"
-        android:showAsAction="always"/>
+        android:title="LOCK"
+         />
+
 </menu>

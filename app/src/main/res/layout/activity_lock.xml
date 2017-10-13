@@ -9,7 +9,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="59dp"
         android:gravity="center_horizontal"
         android:padding="5dp"
         android:text="Lock her Application by asking a question !!"
@@ -31,8 +31,11 @@
         android:accessibilityLiveRegion="polite"
         android:background="@drawable/edit_text_background"
         android:hint="Your Question"
-        android:padding="5dp"
+        android:padding="8dp"
         android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <EditText
@@ -42,11 +45,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/yourquestionedittext"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/edit_text_background"
         android:hint="Your Answer"
-        android:padding="5dp"
+        android:padding="8dp"
         android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <Button
@@ -70,14 +76,14 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/lockherbutton"
-        android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
         android:backgroundTint="@color/colorPrimary"
         android:elevation="0dp"
         android:onClick="unlockher"
         android:text="UNLOCK HER"
-        android:textColor="@color/colorAccent" />
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/lockherbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
 </RelativeLayout>

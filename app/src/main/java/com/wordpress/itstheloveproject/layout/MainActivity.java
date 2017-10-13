@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         //Handle item selection
         switch (item.getItemId()) {
-            case R.menu.lock:
+            case R.id.lock:
                     lock();
                 return true;
             default:
@@ -246,7 +246,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
 
         super.onPause();
-        Toast.makeText(getApplicationContext(), "onPause called", Toast.LENGTH_LONG).show();
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myConnectionsRef = database.getReference("users/Aman/online");
 
