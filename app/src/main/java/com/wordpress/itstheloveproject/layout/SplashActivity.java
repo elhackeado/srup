@@ -1,6 +1,7 @@
 package com.wordpress.itstheloveproject.layout;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -33,6 +34,11 @@ public class SplashActivity extends Activity {
                 // This method will be executed once the timer is over
                 // Start your app main activity
                 Intent i = new Intent(SplashActivity.this, SuperMainActivity.class);
+
+               /* Bundle bndlanimation =
+                        ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation,R.anim.animation2).toBundle();
+                startActivity(i, bndlanimation);
+               */
                 startActivity(i);
 
                 // close this activity
