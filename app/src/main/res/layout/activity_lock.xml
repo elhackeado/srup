@@ -9,16 +9,16 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="71dp"
         android:gravity="center_horizontal"
         android:padding="5dp"
         android:text="Lock her Application by asking a question !!"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/yourquestionedittext"
@@ -28,7 +28,12 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="33dp"
-        android:hint="Your Question" />
+        android:accessibilityLiveRegion="polite"
+        android:background="@drawable/edit_text_background"
+        android:hint="Your Question"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/youransweredittext"
@@ -38,22 +43,27 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/yourquestionedittext"
         android:layout_marginTop="29dp"
-        android:hint="Your Answer" />
+        android:background="@drawable/edit_text_background"
+        android:hint="Your Answer"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/lockherbutton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/youransweredittext"
+        android:layout_marginTop="56dp"
         android:background="@color/colorPrimary"
         android:backgroundTint="@color/colorPrimary"
         android:elevation="0dp"
+        android:onClick="lockher"
         android:text="LOCK HER"
-        android:textColor="@color/colorAccent"
-        android:layout_marginTop="56dp"
-        android:layout_below="@+id/youransweredittext"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textColor="@color/colorAccent" />
 
     <Button
         android:id="@+id/unlockherbutton"
@@ -67,6 +77,7 @@
         android:background="@color/colorPrimary"
         android:backgroundTint="@color/colorPrimary"
         android:elevation="0dp"
+        android:onClick="unlockher"
         android:text="UNLOCK HER"
         android:textColor="@color/colorAccent" />
 </RelativeLayout>

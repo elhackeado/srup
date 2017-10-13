@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.support.v7.app.NotificationCompat;
 import android.text.Html;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -43,6 +46,31 @@ public class MainActivity extends AppCompatActivity {
 
     DatabaseReference databaseChat;
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.lock, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        //Handle item selection
+        switch (item.getItemId()) {
+            case R.menu.lock:
+                    lock();
+                return true;
+            default:
+                return  super.onOptionsItemSelected(item);
+        }
+    }
+
+    public void lock(){
+
+        Intent intent = new Intent(MainActivity.this, lock.class);
+        startActivity(intent);
+    }
 
 
     @Override
