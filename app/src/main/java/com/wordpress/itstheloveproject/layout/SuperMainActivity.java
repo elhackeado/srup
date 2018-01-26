@@ -46,7 +46,7 @@ public class SuperMainActivity extends AppCompatActivity {
                answer2 = dataSnapshot.child("answer2").getValue().toString();
                if(answer1.equals(answer2))
                {
-                   Intent intent = new Intent(SuperMainActivity.this, MainActivity.class);
+                   Intent intent = new Intent(SuperMainActivity.this, One_time.class);
                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                    startActivity(intent);
                    finish();

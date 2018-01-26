@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SuperMainActivity"></activity>
+        <activity android:name=".SuperMainActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
@@ -18,7 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lock"></activity>
+        <activity android:name=".lock" />
+        <activity android:name=".One_time" />
+        <activity android:name=".SessionActivity" />
+        <activity android:name=".CreateSession" />
+        <activity android:name=".JoinSession"></activity>
     </application>
 
 </manifest>

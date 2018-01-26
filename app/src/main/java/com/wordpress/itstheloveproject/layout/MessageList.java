@@ -7,6 +7,14 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 
@@ -24,19 +32,21 @@ public class MessageList extends ArrayAdapter<Message> {
     }
 
 
+
+
+
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
         Message message = messageList.get(position);
-
         if(message.getUser().equals("aman")) {
         View listViewItem = inflater.inflate(R.layout.mes1, null, true);
-
         TextView textView = (TextView) listViewItem.findViewById(R.id.textView);
         TextView timeView = (TextView) listViewItem.findViewById(R.id.time);
 
             textView.setText(message.getMessage());
-           timeView.setText(message.getTime());
+          timeView.setText(message.getTimestamp());
             return listViewItem;
         }
         else{
@@ -46,11 +56,12 @@ public class MessageList extends ArrayAdapter<Message> {
             TextView timeView = (TextView) listViewItem.findViewById(R.id.time);
 
             textView.setText(message.getMessage());
-            timeView.setText(message.getTime());
+            timeView.setText(message.getTimestamp());
             return listViewItem;
         }
 
 
 
     }
+
 }

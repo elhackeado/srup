@@ -1,5 +1,15 @@
 package com.wordpress.itstheloveproject.layout;
 
+import android.text.Html;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
 
 public class Message {
@@ -7,25 +17,24 @@ public class Message {
     String messageId;
     String message;
     String user;
-    String time;
-    String datestamp;
+    String timestamp;
+    //String time;
+    //String datestamp;
 
     public Message()
     {
 
     }
 
-    public Message(String messageId, String message, String user, String time, String datestamp ) {
+    public Message(String messageId, String message, String user, String timestamp ) {
         this.messageId = messageId;
         this.message = message;
         this.user = user;
-        this.time = time;
-        this.datestamp = datestamp;
+        this.timestamp = timestamp;
+
     }
 
-    public String getMessageId() {
-        return messageId;
-    }
+    //public String getMessageId() {return messageId;}
 
     public String getMessage() {
         return message;
@@ -33,9 +42,9 @@ public class Message {
 
     public String getUser() {return user;}
 
-    public String getTime() {return time; }
+    public String getTimestamp() {return timestamp; }
 
-    public String getDatestamp() {return datestamp; }
+    //public String getDatestamp() {return datestamp; }
 
 
 

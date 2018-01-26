@@ -1,5 +1,7 @@
 package com.wordpress.itstheloveproject.layout;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -63,6 +65,13 @@ public class lock extends AppCompatActivity {
             databaseQuestion.child("question").setValue(question);
             databaseQuestion.child("answer1").setValue(answer);
             databaseQuestion.child("answer2").setValue("");
+            SharedPreferences pref = getSharedPreferences("ActivityPREF", Context.MODE_PRIVATE);
+            // We need an editor object to make changes
+            SharedPreferences.Editor edit = pref.edit();
+            // Set/Store data
+            edit.putBoolean("logged_in", true);
+            // Commit the changes
+            edit.commit();
             Toast.makeText(this, "LOCKED SUCCESSFULLY", Toast.LENGTH_LONG).show();
         }
     }
