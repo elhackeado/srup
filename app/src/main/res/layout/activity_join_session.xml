@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.wordpress.itstheloveproject.layout.JoinSession">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/enteryourpartnerssessionid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Enter Your Partner's"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/entersessionid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text='"Session Id" '
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/SessionId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/entersessionid"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Session Id"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+
+    <Button
+        android:id="@+id/joinsession"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/SessionId"
+        android:layout_marginTop="25dp"
+        android:accessibilityLiveRegion="polite"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="0dp"
+        android:onClick="lockher"
+
+        android:text="JOIN SESSION"
+        android:textColor="@color/colorAccent" />
+
+
+</RelativeLayout>
